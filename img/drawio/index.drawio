@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
+  <diagram name="Oldal-1" id="UqbifvRZdpcNRyTszWYn">
+    <mxGraphModel dx="1426" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QQ3zv1Im-UCRjR4sBlmc-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="590" width="740" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QQ3zv1Im-UCRjR4sBlmc-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="nav" vertex="1">
+          <mxGeometry height="40" width="740" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QQ3zv1Im-UCRjR4sBlmc-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="footer" vertex="1">
+          <mxGeometry height="40" width="450" x="40" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="QQ3zv1Im-UCRjR4sBlmc-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="aside(kep)" vertex="1">
+          <mxGeometry height="550" width="290" x="490" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="QQ3zv1Im-UCRjR4sBlmc-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="510" width="450" x="40" y="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
