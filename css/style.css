@@ -1,0 +1,19 @@
+:root {
+    --color-bg: #ebe9e9;
+    --color-purple: #a12bfb;
+    --color-dark-pink: #ff7fa2;
+    --color-light-pink: #fc9bad;
+    --color-baby-pink: #fddee4;
+    --color-yellow: #ffd065;
+    --color-light-blue: #43dcfc;
+    --color-dark-blue: #160432;
+    --color-light-orange: #fe8562;
+    --color-light-retro: #fd4063;
+    --color-shadow-purple: #b22eff;
+    --color-light-star: #fdebd6;
+    --selector: #b0728d;
+}
+
+body {
+    background-color: var(--color-bg);
+}
