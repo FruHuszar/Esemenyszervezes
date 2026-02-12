@@ -7,7 +7,6 @@
 header,
 footer,
 main,
-nav,
 aside,
 article {
   border: 1px solid gray;
@@ -23,6 +22,7 @@ main {
 
 nav {
   flex: 0 0 100%;
+  border: 1px solid gray;
 }
 
 header {
