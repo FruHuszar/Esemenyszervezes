@@ -13,6 +13,7 @@
     --color-light-retro: #fd4063;
     --color-shadow-purple: #b22eff;
     --color-light-star: #fdebd6;
+    --color-youtube: #d9032d;
     --selector: #b0728d;
     --font-main: NeueHaas;
     --font-heading: Cheva;
@@ -44,12 +45,36 @@ body {
 ::-moz-selection {
     background-color: var(--selector);
 }
-main{
+
+main {
     background-color: var(--color-baby-pink);
 }
+
 h1 {
     font-family: var(--font-heading);
 }
-.header-icon{
+
+.header-icon {
     color: var(--color-purple);
+    font-size: 40px;
+}
+
+.icons ul {
+    list-style: none;
+}
+
+.fruzsibaba {
+    color: var(--color-purple);
+}
+
+.levibaba {
+    color: var(--color-light-blue);
+}
+
+.vandababa {
+    color: var(--color-dark-pink);
+}
+
+.youtube {
+    color: var(--color-youtube);
 }
