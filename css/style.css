@@ -17,3 +17,11 @@
 body {
     background-color: var(--color-bg);
 }
+
+::selection {
+    background-color: var(--selector);
+}
+
+::-moz-selection {
+    background-color: var(--selector);
+}
