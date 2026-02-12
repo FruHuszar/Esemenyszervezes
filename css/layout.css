@@ -1,3 +1,32 @@
+/*oldalszerkezet készítése minden oldalhoz*/
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header, footer, main, nav, aside, article {
+  border: 1px solid gray;
+  padding: 10px;
+}
+main {
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  flex: 0 0 100%;
+}
+
+article {
+  flex: 0 0 70%;
+}
+
+aside {
+  flex: 0 0 30%;
+}
+footer{
+    flex: 0 0 100%;
 }
