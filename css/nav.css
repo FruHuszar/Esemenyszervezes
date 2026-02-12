@@ -30,6 +30,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: var(--color-light-retro);
+    transition: .3s;
+}
+
 @media (max-width: 480px) {
     nav ul {
         flex-direction: column;

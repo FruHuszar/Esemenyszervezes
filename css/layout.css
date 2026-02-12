@@ -4,19 +4,27 @@
   box-sizing: border-box;
 }
 
-header, footer, main, nav, aside, article {
+header,
+footer,
+main,
+nav,
+aside,
+article {
   border: 1px solid gray;
   padding: 10px;
 }
+
 main {
-  width: 85%;
+  width: 75%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
 }
-nav{
-    flex: 0 0 100%;
+
+nav {
+  flex: 0 0 100%;
 }
+
 header {
   flex: 0 0 100%;
 }
@@ -28,8 +36,7 @@ article {
 aside {
   flex: 0 0 30%;
 }
-footer{
-    flex: 0 0 100%;
+
+footer {
+  flex: 0 0 100%;
 }
-
-
