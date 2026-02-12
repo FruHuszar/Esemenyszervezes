@@ -40,3 +40,8 @@ aside {
 footer {
   flex: 0 0 100%;
 }
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+}
