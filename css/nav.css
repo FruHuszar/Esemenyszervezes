@@ -30,6 +30,10 @@ nav a {
     text-decoration: none;
 }
 
+nav li:first-child a {
+    padding: 0;
+}
+
 nav a:hover {
     color: var(--color-light-retro);
     transition: .3s;
