@@ -50,6 +50,8 @@ main{
 }
 h1 {
     font-family: var(--font-heading);
+    color: var(--color-light-retro);
+    font-variant: small-caps;
 }
 .header-icon{
     color: var(--color-purple);
