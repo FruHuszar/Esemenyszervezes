@@ -12,10 +12,27 @@
     --color-shadow-purple: #b22eff;
     --color-light-star: #fdebd6;
     --selector: #b0728d;
+    --font-main: NeueHaas;
+    --font-heading: Cheva;
+}
+
+@font-face {
+    font-family: "NeueHaas";
+    src: url("../ttf/NeueHaasDisplayRoman.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cheva";
+    src: url("../ttf/ChevaDisplayDemo.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
     background-color: var(--color-bg);
+    font-family: var(--font-main);
 }
 
 ::selection {
@@ -24,4 +41,8 @@ body {
 
 ::-moz-selection {
     background-color: var(--selector);
+}
+
+h1 {
+    font-family: var(--font-heading);
 }
