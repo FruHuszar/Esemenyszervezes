@@ -9,8 +9,7 @@ header, footer, main, nav, aside, article {
   padding: 10px;
 }
 main {
-  width: 95%;
-  max-width: 1000px;
+  width: 85%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
