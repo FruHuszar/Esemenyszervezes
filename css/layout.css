@@ -15,7 +15,9 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
-
+nav{
+    flex: 0 0 100%;
+}
 header {
   flex: 0 0 100%;
 }
@@ -30,3 +32,5 @@ aside {
 footer{
     flex: 0 0 100%;
 }
+
+
