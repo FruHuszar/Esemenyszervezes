@@ -1,1 +1,48 @@
 /*menu kialakitasa minden oldalhoz*/
+nav {
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: flex;
+}
+
+nav li.active {
+    background-color: var(--color-light-pink);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        width: 100%;
+    }
+}
