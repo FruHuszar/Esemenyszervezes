@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+</head>
+<body>
+    <form action="">
+    <fieldset class="regisztracio">
+        <legend></legend>
+        <div class="reg">
+            <label for="nev">Név <span> * </span></label>
+            <input type="text" name="nev" id="nev" required maxlength="50">
+        </div>
+        <div class="reg">
+            <label for="ecim">Email-cím <span> * </span></label>
+            <input type="email" name="ecim" id="ecim" required>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend></legend>
+        <div>
+            <label for="esemeny">Esemény</label>
+            <select name="esemeny_kiv" id="">
+                <option value="Zambo Jimmy koncert" name="v1">Zámbó Jimmy koncert</option>
+                <option value="Jubeliumi Nigthcore est" name="v2">Jubeliumi Nigthcore est</option>
+                <option value="Ironmouse" name="v3">Ironmouse</option>
+                <option value="Be my bad boy veretes" selected name="v4">Be my bad boy veretés</option>
+            </select>
+        </div>
+        <div>
+            <label for="resztvevok">Résztvevők száma(1 és 10 között):</label>
+            <input type="number" id="resztvevok" name="resztvevok" min="1" max="10">
+        </div>
+        <div>
+            <input type="checkbox" name="tipus1" id="tipus1" value="felnőtt">
+            <label for="t1">Felnőtt</label>
+        </div>
+        <div>
+            <input type="checkbox" name="tipus2" id="tipus2" value="gyerek">
+            <label for="t2">Gyerek</label>
+        </div>
+        <div>
+            <input type="checkbox" name="tipus3" id="tipus3" value="nyugdijas">
+            <label for="t3">Nyugdíjas</label>
+        </div>
+        <div>
+            <input type="checkbox" name="tipus4" id="tipus4" value="diak">
+            <label for="t4">Diák</label>
+        </div>
+        <fieldset>
+            <legend>Megjegyzés</legend>
+            <label for="megjegy"></label>
+            <textarea name="megjegy" id="megjegy"></textarea>
+        </fieldset>
+        <input type="submit" name="kuld" id="kuld" value="Küldés">
+    </fieldset>
+    </form>
+</body>
+</html>
