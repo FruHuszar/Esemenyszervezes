@@ -33,7 +33,7 @@
 }
 
 body {
-    background-color: var(--color-bg);
+    background-color: var(--color-yellow);
     font-family: var(--font-main);
 }
 
@@ -44,7 +44,12 @@ body {
 ::-moz-selection {
     background-color: var(--selector);
 }
-
+main{
+    background-color: var(--color-baby-pink);
+}
 h1 {
     font-family: var(--font-heading);
+}
+.header-icon{
+    color: var(--color-purple);
 }
