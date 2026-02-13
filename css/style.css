@@ -33,11 +33,6 @@
     font-style: normal;
 }
 
-body {
-    background-color: var(--color-yellow);
-    font-family: var(--font-main);
-}
-
 ::selection {
     background-color: var(--selector);
 }
@@ -46,8 +41,23 @@ body {
     background-color: var(--selector);
 }
 
+body {
+    background-color: var(--color-yellow);
+    font-family: var(--font-main);
+}
+
 main {
     background-color: var(--color-baby-pink);
+}
+
+nav,
+footer {
+    border-bottom: 1.5px solid black;
+    border-top: 1.5px solid black;
+}
+
+aside {
+    border-left: 1.5px solid black;
 }
 
 h1 {

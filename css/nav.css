@@ -23,12 +23,14 @@ nav ul {
 nav li {
     display: flex;
     padding: 10px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
 nav li.active {
     background-color: var(--color-light-pink);
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left-color: black;
+    border-right-color: black;
 }
 
 .header-icon {

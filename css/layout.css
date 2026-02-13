@@ -4,13 +4,8 @@
   box-sizing: border-box;
 }
 
-header,
-footer,
-main,
-aside,
-article {
-  border: 1px solid gray;
-  padding: 10px;
+html {
+  scrollbar-gutter: stable;
 }
 
 main {
@@ -22,7 +17,7 @@ main {
 
 nav {
   flex: 0 0 100%;
-  border: 1px solid gray;
+  margin-top: 10px;
 }
 
 header {
@@ -31,15 +26,19 @@ header {
 
 article {
   flex: 0 0 70%;
+  padding: 10px;
 }
 
 aside {
   flex: 0 0 30%;
+  padding: 10px;
 }
 
 footer {
   flex: 0 0 100%;
+  margin-bottom: 10px;
 }
+
 .icons ul {
   list-style: none;
   padding: 0;
@@ -48,6 +47,7 @@ footer {
   flex-direction: column;
   gap: 15px;
 }
+
 .icons ul li a {
   display: flex;
   justify-content: center;
