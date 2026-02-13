@@ -58,6 +58,9 @@ footer {
 
 aside {
     border-left: 1.5px solid black;
+    background-image: url('../img/insp/aside_img.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
