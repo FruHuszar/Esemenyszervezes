@@ -40,8 +40,19 @@ aside {
 footer {
   flex: 0 0 100%;
 }
-
-.icons{
-    display: flex;
-    justify-content: flex-end;
+.icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.icons ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
 }

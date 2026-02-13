@@ -10,7 +10,7 @@
     --color-light-blue: #43dcfc;
     --color-dark-blue: #160432;
     --color-light-orange: #fe8562;
-    --color-light-retro: #fd4063;
+    --color-light-retro: #ff5660;
     --color-shadow-purple: #b22eff;
     --color-light-star: #fdebd6;
     --color-youtube: #d9032d;
@@ -61,8 +61,24 @@ h1 {
     font-size: 36px;
 }
 
-.icons ul {
-    list-style: none;
+.icons ul li a {
+    background-color: var(--color-light-star);
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0px var(--color-shadow-purple);
+    font-size: 22px;
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.icons ul li a:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px var(--color-shadow-purple);
+}
+
+.icons ul li a:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--color-shadow-purple);
 }
 
 .fruzsibaba {
