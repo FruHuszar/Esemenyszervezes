@@ -3,42 +3,60 @@
 * {
   box-sizing: border-box;
 }
-
+html,body{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 html {
   scrollbar-gutter: stable;
 }
 
 main {
-  width: 75%;
+  width: 80%;
   margin: auto;
+  min-height: 80vh;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+
 }
 
 nav {
   flex: 0 0 100%;
-  margin-top: 10px;
-}
-
-header {
-  flex: 0 0 100%;
+  margin: 0;
 }
 
 article {
   flex: 0 0 70%;
+  min-height: 75vh;
   padding: 10px;
+  margin: 0;
+  position:relative;
+  text-align: justify;
 }
 
 aside {
   flex: 0 0 30%;
-  padding: 10px;
+  min-height: 75vh;
+  margin: 0;
 }
 
 footer {
   flex: 0 0 100%;
-  margin-bottom: 10px;
+  margin:0;
+  padding: 10px;
 }
-
+.icons{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 15px;
+}
 .icons ul {
   list-style: none;
   padding: 0;
