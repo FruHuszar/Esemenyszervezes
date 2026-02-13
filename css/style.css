@@ -1,82 +1,91 @@
 /*minden oldal szinei, betutipusai, kozos*/
 
 :root {
-    --color-bg: #ebe9e9;
-    --color-purple: #a12bfb;
-    --color-dark-pink: #ff7fa2;
-    --color-light-pink: #fc9bad;
-    --color-baby-pink: #fddee4;
-    --color-yellow: #ffd065;
-    --color-light-blue: #43dcfc;
-    --color-dark-blue: #160432;
-    --color-light-orange: #fe8562;
-    --color-light-retro: #fd4063;
-    --color-shadow-purple: #b22eff;
-    --color-light-star: #fdebd6;
-    --color-youtube: #d9032d;
-    --selector: #b0728d;
-    --font-main: NeueHaas;
-    --font-heading: Cheva;
+  --color-bg: #ebe9e9;
+  --color-purple: #a12bfb;
+  --color-dark-pink: #ff7fa2;
+  --color-light-pink: #fc9bad;
+  --color-baby-pink: #fddee4;
+  --color-yellow: #ffd065;
+  --color-light-blue: #43dcfc;
+  --color-dark-blue: #160432;
+  --color-light-orange: #fe8562;
+  --color-light-retro: #ff5660;
+  --color-shadow-purple: #b22eff;
+  --color-light-star: #fdebd6;
+  --color-youtube: #d9032d;
+  --selector: #b0728d;
+  --font-main: NeueHaas;
+  --font-heading: Cheva;
 }
 
 @font-face {
-    font-family: "NeueHaas";
-    src: url("../ttf/NeueHaasDisplayRoman.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "NeueHaas";
+  src: url("../ttf/NeueHaasDisplayRoman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Cheva";
-    src: url("../ttf/ChevaDisplayDemo.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Cheva";
+  src: url("../ttf/ChevaDisplayDemo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    background-color: var(--color-yellow);
-    font-family: var(--font-main);
+  background-color: var(--color-yellow);
+  font-family: var(--font-main);
 }
 
 ::selection {
-    background-color: var(--selector);
+  background-color: var(--selector);
 }
 
 ::-moz-selection {
-    background-color: var(--selector);
+  background-color: var(--selector);
 }
 
 main {
-    background-color: var(--color-baby-pink);
+  background-color: var(--color-baby-pink);
 }
 
 h1 {
-    font-family: var(--font-heading);
-    color: var(--color-light-retro);
-    font-variant: small-caps;
+  font-family: var(--font-heading);
+  color: var(--color-light-retro);
+  font-variant: small-caps;
 }
 
 .header-icon {
-    color: var(--color-purple);
-    font-size: 40px;
+  color: var(--color-purple);
+  font-size: 40px;
 }
-
-.icons ul {
-    list-style: none;
+.icons ul li a {
+  background-color: var(--color-light-star);
+  border: 2px solid #000;
+  box-shadow: 6px 6px 0px var(--color-shadow-purple);
+  font-size: 22px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
-
+.icons ul li a:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px var(--color-shadow-purple);
+}
+.icons ul li a:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--color-shadow-purple);
+}
 .fruzsibaba {
-    color: var(--color-purple);
+  color: var(--color-purple);
 }
-
 .levibaba {
-    color: var(--color-light-blue);
+  color: var(--color-light-blue);
 }
-
 .vandababa {
-    color: var(--color-dark-pink);
+  color: var(--color-dark-pink);
 }
-
 .youtube {
-    color: var(--color-youtube);
+  color: var(--color-youtube);
 }
