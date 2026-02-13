@@ -1,104 +1,80 @@
 <!doctype html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Űrlap</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-  </head>
 
-  <body>
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Űrlap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/form.css">
+</head>
 
-      <header></header>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html"><i class="fa-solid fa-paw header-icon"></i></a>
-          </li>
-          <li><a href="index.html">Főoldal</a></li>
-          <li><a href="event.html">Esemény</a></li>
-          <li class="active"><a href="form.html">Jelentkezés</a></li>
-        </ul>
-      </nav>
-
-      <article>
-
-        <fieldset class="registration">
-          <legend></legend>
-          <div class="reg">
-            <label for="name">Név : <span> * </span></label>
-            <input type="text" name="name" id="name" required maxlength="50" />
-          </div>
-          <div class="reg">
-            <label for="email_add">Email-cím : <span> * </span></label>
-            <input type="email" name="email_add" id="email_add" required />
-          </div>
-        </fieldset>
-
+<body>
+  <main>
+    <nav>
+      <a id="brand" href="index.html"><i class="fa-solid fa-paw header-icon"></i></a>
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="event.html">Esemény</a></li>
+        <li class="active"><a href="form.html">Jelentkezés</a></li>
+      </ul>
+    </nav>
+    <article>
+      <fieldset class="registration">
+        <legend></legend>
+        <div class="reg">
+          <label for="name">Név : <span> * </span></label>
+          <input type="text" name="name" id="name" required maxlength="50" />
+        </div>
+        <div class="reg">
+          <label for="email_add">Email-cím : <span> * </span></label>
+          <input type="email" name="email_add" id="email_add" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend></legend>
+        <div>
+          <label for="event">Esemény :</label>
+          <select name="event_chose" id="">
+            <option value="Zambo Jimmy koncert" name="v1">Zámbó Jimmy koncert</option>
+            <option value="Jubileumi Nigthcore est" name="v2">Jubeliumi Nigthcore est</option>
+            <option value="Ironmouse" name="v3">Ironmouse</option>
+            <option value="Be my bad boy veretes" selected name="v4">Be my bad boy veretés</option>
+          </select>
+        </div>
+        <div>
+          <label for="participant">Résztvevők száma(1 és 10 között):</label>
+          <input type="number" id="participant" name="participant" min="1" max="10" value="1" />
+        </div>
+        <div>
+          <input type="checkbox" name="type1" id="type1" value="adult" />
+          <label for="t1">Felnőtt</label>
+        </div>
+        <div>
+          <input type="checkbox" name="type2" id="type2" value="child" />
+          <label for="t2">Gyerek</label>
+        </div>
+        <div>
+          <input type="checkbox" name="type3" id="type3" value="senior" />
+          <label for="t3">Nyugdíjas</label>
+        </div>
+        <div>
+          <input type="checkbox" name="type4" id="type4" value="student" />
+          <label for="t4">Diák</label>
+        </div>
         <fieldset>
-          <legend></legend>
-
-          <div>
-            <label for="event">Esemény :</label>
-            <select name="event_chose" id="">
-              <option value="Zambo Jimmy koncert" name="v1">Zámbó Jimmy koncert</option>
-              <option value="Jubileumi Nigthcore est" name="v2">Jubeliumi Nigthcore est</option>
-              <option value="Ironmouse" name="v3">Ironmouse</option>
-              <option value="Be my bad boy veretes" selected name="v4">Be my bad boy veretés</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="participant">Résztvevők száma(1 és 10 között):</label>
-            <input
-              type="number"
-              id="participant"
-              name="participant"
-              min="1"
-              max="10"
-              value="1"
-            />
-          </div>
-
-          <div>
-            <input type="checkbox" name="type1" id="type1" value="adult" />
-            <label for="t1">Felnőtt</label>
-          </div>
-
-          <div>
-            <input type="checkbox" name="type2" id="type2" value="child" />
-            <label for="t2">Gyerek</label>
-          </div>
-
-          <div>
-            <input type="checkbox" name="type3" id="type3" value="senior" />
-            <label for="t3">Nyugdíjas</label>
-          </div>
-
-          <div>
-            <input type="checkbox" name="type4" id="type4" value="student" />
-            <label for="t4">Diák</label>
-          </div>
-
-          <fieldset>
-            <legend>Megjegyzés</legend>
-            <label for="comment"></label>
-            <textarea name="comment" id="comment"></textarea>
-          </fieldset>
-
-          <input type="submit" name="send" id="send" value="Küldés" />
-
+          <legend>Megjegyzés</legend>
+          <label for="comment"></label>
+          <textarea name="comment" id="comment"></textarea>
         </fieldset>
+        <input type="submit" name="send" id="send" value="Küldés" />
+      </fieldset>
+    </article>
+    <footer>...</footer>
+  </main>
+</body>
 
-      </article>
-
-      <footer></footer>
-
-    </main>
-  </body>
 </html>

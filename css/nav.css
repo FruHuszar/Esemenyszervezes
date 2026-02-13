@@ -1,21 +1,28 @@
 /*menu kialakitasa minden oldalhoz, fruzsina*/
 nav {
-    padding: 0;
+    display: flex;
+}
+
+nav #brand {
+    flex: 0 0 auto;
+    padding: 2px 4px;
 }
 
 nav ul {
     display: flex;
+    flex: 1;
     flex-direction: row;
+    margin: 0;
+    padding: 0 10vw;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav li {
     display: flex;
+    padding: 10px;
 }
 
 nav li.active {
@@ -24,14 +31,14 @@ nav li.active {
     border-right: 1px solid black;
 }
 
-nav a {
-    padding: 10px;
-    color: black;
-    text-decoration: none;
+.header-icon {
+    padding: 0;
 }
 
-nav li:first-child a {
-    padding: 0;
+nav a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -39,12 +46,26 @@ nav a:hover {
     transition: .3s;
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+}
+
 @media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
     nav ul {
         flex-direction: column;
     }
 
     nav li {
         width: 100%;
+    }
+
+    .header-icon {
+        padding: 5px;
     }
 }
