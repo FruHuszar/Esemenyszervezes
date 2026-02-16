@@ -1,1 +1,64 @@
 /*urlap formazasai - csak az urlaphoz, vanda*/
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+label{
+
+}
+
+input[type=text]{
+    width: 100%;
+    margin-top: 5px;
+}
+input[type=email]{
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+.event{
+    padding: 10px;
+}
+
+.par{
+    padding: 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+span{
+    padding: 10px;
+}
+
+#send{
+    background-color: var(--color-light-star, #fdebd6);
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0px var(--color-shadow-purple, #b22eff);
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#send:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px var(--color-shadow-purple, #b22eff);
+}
+
+#send:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--color-shadow-purple, #b22eff);
+}

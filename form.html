@@ -14,6 +14,7 @@
 
   <body>
     <main>
+     
       <nav>
         <ul>
           <li>
@@ -25,29 +26,31 @@
         </ul>
       </nav>
       <article>
+        <h1>Jelentkezz!</h1>
+        <form action=""> 
         <fieldset class="registration">
           <legend></legend>
           <div class="reg">
-            <label for="name">Név : <span> * </span></label>
+            <label for="name">Név <span> * </span></label>
             <input type="text" name="name" id="name" required maxlength="50" />
           </div>
           <div class="reg">
-            <label for="email_add">Email-cím : <span> * </span></label>
+            <label for="email_add">Email-cím  <span> * </span></label>
             <input type="email" name="email_add" id="email_add" required />
           </div>
         </fieldset>
         <fieldset>
           <legend></legend>
-          <div>
+          <div class="event">
             <label for="event">Esemény :</label>
-            <select name="event_chose" id="">
+            <select name="event_chose" id="cho">
               <option value="Zambo Jimmy koncert" name="v1">Zámbó Jimmy koncert</option>
-              <option value="Jubileumi Nigthcore est" name="v2">Jubeliumi Nigthcore est</option>
+              <option value="Jubileumi Nigthcore est"selected name="v2">Jubeliumi Nigthcore est</option>
               <option value="Ironmouse" name="v3">Ironmouse</option>
-              <option value="Be my bad boy veretes" selected name="v4">Be my bad boy veretés</option>
+              <option value="Be my bad boy veretes" name="v4">Be my bad boy veretés</option>
             </select>
           </div>
-          <div>
+          <div class="par">
             <label for="participant">Résztvevők száma(1 és 10 között):</label>
             <input
               type="number" id="participant"name="participant"min="1" max="10"value="1"/>
@@ -75,8 +78,11 @@
           </fieldset>
           <input type="submit" name="send" id="send" value="Küldés" />
         </fieldset>
+        </form> 
       </article>
-      <footer></footer>
+      <aside></aside>
+      <footer>...</footer>
+
     </main>
   </body>
 </html>

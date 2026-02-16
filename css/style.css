@@ -165,6 +165,21 @@ h1 {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0px var(--color-shadow-purple);
 }
+
+/*form*/
+
+form{
+  border-radius: 15px;
+  background-color: var(--color-light-pink);
+}
+span{
+  color: var(--color-purple);
+}
+
+fieldset{
+  border: 0;
+}
+
 @media (max-width: 1000px) {
 
   article {
