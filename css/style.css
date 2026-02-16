@@ -62,18 +62,46 @@ aside {
   background-size: cover;
   background-position: center;
 }
-
+article {
+  padding-right: 80px;
+  position: relative;
+}
+article p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 90%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
 h1 {
   font-family: var(--font-heading);
   color: var(--color-light-retro);
   font-variant: small-caps;
+  font-size: 60px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #000000dc;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .header-icon {
   color: var(--color-purple);
   font-size: 36px;
 }
-
+.icons {
+  position: absolute;
+  right: 0;        
+  top: 50%;      
+  transform: translateY(-50%);
+  width: 60px;      
+  z-index: 10;  
+  padding: 15px;    
+}
 .icons ul li a {
   background-color: var(--color-light-star);
   border: 2px solid #000;
@@ -123,6 +151,10 @@ h1 {
   color: var(--color-dark-blue);
   cursor: pointer;
   font-weight: bold;
+  max-width: 100%;      
+  box-sizing: border-box; 
+  white-space: normal;   
+  text-align: center;
 }
 .button a:hover {
   transform: translate(-2px, -2px);
@@ -132,4 +164,27 @@ h1 {
 .button a:active {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0px var(--color-shadow-purple);
+}
+@media (max-width: 1000px) {
+
+  article {
+    padding-right: 20px;
+    padding-bottom: 90px; 
+     border-right: none; 
+    border-bottom: 1.5px solid black;
+  }
+  aside{
+    border-left: none; 
+  }
+  .icons {
+    top: auto; 
+    right: auto; 
+    transform: none !important; 
+    bottom: 20px;
+    left: 0;
+  }
+  .icons ul {
+    flex-direction: row; 
+    gap: 20px;
+  }
 }

@@ -3,7 +3,8 @@
 * {
   box-sizing: border-box;
 }
-html,body{
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -22,7 +23,6 @@ main {
   flex-wrap: wrap;
   align-content: flex-start;
   padding: 0;
-
 }
 
 nav {
@@ -35,8 +35,12 @@ article {
   min-height: 75vh;
   padding: 10px;
   margin: 0;
-  position:relative;
+  position: relative;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 aside {
@@ -47,10 +51,10 @@ aside {
 
 footer {
   flex: 0 0 100%;
-  margin:0;
+  margin: 0;
   padding: 10px;
 }
-.icons{
+.icons {
   position: absolute;
   right: 0;
   top: 50%;
@@ -73,4 +77,43 @@ footer {
   width: 50px;
   height: 50px;
   text-decoration: none;
+}
+@media (max-width: 1000px) {
+  main {
+    width: 95%;
+    height: auto;
+    min-height: auto;
+    margin: 0 auto;
+  }
+
+  article {
+    flex: 0 0 100%;
+    min-height: auto;
+    padding: 30px 15px !important;
+    flex-direction: column;
+  }
+  aside {
+    flex: 0 0 100%;
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .icons {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  .icons ul {
+    flex-direction: row;
+    gap: 20px;
+  }
 }

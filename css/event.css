@@ -1,1 +1,50 @@
 /*esemenyek elrendezese csak az index.html-hez, levente*/
+
+html, body {
+    display: block !important;      
+    height: auto !important;        
+    min-height: 100vh !important;   
+    overflow-y: auto !important;   
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+main {
+    height: auto !important;        
+    margin: 0 auto !important;      
+    max-width: 100%;
+}
+
+article {
+    height: auto !important;
+    overflow: visible !important;  
+    display: block !important;
+}
+
+.button-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.retro-btn {
+    background-color: var(--color-light-star, #fdebd6);
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0px var(--color-shadow-purple, #b22eff);
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.retro-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px var(--color-shadow-purple, #b22eff);
+}
+
+.retro-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--color-shadow-purple, #b22eff);
+}
