@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="hu">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Űrlap</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form.css" />
   </head>
 
   <body>
     <main>
-     
       <nav>
         <ul>
           <li>
@@ -27,62 +28,98 @@
       </nav>
       <article>
         <h1>Jelentkezz!</h1>
-        <form action=""> 
-        <fieldset class="registration">
-          <legend></legend>
-          <div class="reg">
-            <label for="name">Név <span> * </span></label>
-            <input type="text" name="name" id="name" required maxlength="50" />
-          </div>
-          <div class="reg">
-            <label for="email_add">Email-cím  <span> * </span></label>
-            <input type="email" name="email_add" id="email_add" required />
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend></legend>
-          <div class="event">
-            <label for="event">Esemény :</label>
-            <select name="event_chose" id="cho">
-              <option value="Zambo Jimmy koncert" name="v1">Zámbó Jimmy koncert</option>
-              <option value="Jubileumi Nigthcore est"selected name="v2">Jubeliumi Nigthcore est</option>
-              <option value="Ironmouse" name="v3">Ironmouse</option>
-              <option value="Be my bad boy veretes" name="v4">Be my bad boy veretés</option>
-            </select>
-          </div>
-          <div class="par">
-            <label for="participant">Résztvevők száma(1 és 10 között):</label>
-            <input
-              type="number" id="participant"name="participant"min="1" max="10"value="1"/>
-          </div>
-          <div>
-            <input type="checkbox" name="type1" id="type1" value="adult" />
-            <label for="t1">Felnőtt</label>
-          </div>
-          <div>
-            <input type="checkbox" name="type2" id="type2" value="child" />
-            <label for="t2">Gyerek</label>
-          </div>
-          <div>
-            <input type="checkbox" name="type3" id="type3" value="senior" />
-            <label for="t3">Nyugdíjas</label>
-          </div>
-          <div>
-            <input type="checkbox" name="type4" id="type4" value="student" />
-            <label for="t4">Diák</label>
-          </div>
-          <fieldset>
-            <legend>Megjegyzés</legend>
-            <label for="comment"></label>
-            <textarea name="comment" id="comment"></textarea>
+        <form action="">
+          <fieldset class="registration">
+            <legend></legend>
+            <div class="reg">
+              <label for="name">Név <span> * </span></label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                maxlength="50"
+              />
+            </div>
+            <div class="reg">
+              <label for="email_add">Email-cím <span> * </span></label>
+              <input type="email" name="email_add" id="email_add" required />
+            </div>
           </fieldset>
-          <input type="submit" name="send" id="send" value="Küldés" />
-        </fieldset>
-        </form> 
+          <fieldset>
+            <legend></legend>
+            <div class="event">
+              <label for="event">Esemény :</label>
+              <select name="event_chose" id="cho">
+                <option value="Zambo Jimmy koncert" name="v1">
+                  Zámbó Jimmy koncert
+                </option>
+                <option value="Jubileumi Nigthcore est" selected name="v2">
+                  Jubeliumi Nigthcore est
+                </option>
+                <option value="Ironmouse" name="v3">Ironmouse</option>
+                <option value="Be my bad boy veretes" name="v4">
+                  Be my bad boy veretés
+                </option>
+              </select>
+            </div>
+            <div class="par">
+              <label for="participant">Résztvevők száma(1 és 10 között):</label>
+              <input
+                type="number"
+                id="participant"
+                name="participant"
+                min="1"
+                max="10"
+                value="1"
+              />
+            </div>
+            <div>
+              <input type="checkbox" name="type1" id="type1" value="adult" />
+              <label for="t1">Felnőtt</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type2" id="type2" value="child" />
+              <label for="t2">Gyerek</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type3" id="type3" value="senior" />
+              <label for="t3">Nyugdíjas</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type4" id="type4" value="student" />
+              <label for="t4">Diák</label>
+            </div>
+            <fieldset>
+              <legend>Megjegyzés</legend>
+              <label for="comment"></label>
+              <textarea name="comment" id="comment"></textarea>
+            </fieldset>
+            <input type="submit" name="send" id="send" value="Küldés" />
+          </fieldset>
+        </form>
       </article>
       <aside></aside>
-      <footer>...</footer>
-
+      <footer>
+        <div class="footer-pattern">
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+          <i class="fa-solid fa-paw"></i>
+        </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

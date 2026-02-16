@@ -88,6 +88,21 @@ h1 {
   margin-top: 0;
   margin-bottom: 20px;
 }
+footer {
+  position: relative;
+  overflow: hidden;
+}
+.footer-pattern {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  opacity: 0.5;
+}
+.footer-pattern i {
+  color: var(--color-purple);
+  font-size: 24px;
+}
 
 .header-icon {
   color: var(--color-purple);
@@ -95,12 +110,12 @@ h1 {
 }
 .icons {
   position: absolute;
-  right: 0;        
-  top: 50%;      
+  right: 0;
+  top: 50%;
   transform: translateY(-50%);
-  width: 60px;      
-  z-index: 10;  
-  padding: 15px;    
+  width: 60px;
+  z-index: 10;
+  padding: 15px;
 }
 .icons ul li a {
   background-color: var(--color-light-star);
@@ -151,9 +166,9 @@ h1 {
   color: var(--color-dark-blue);
   cursor: pointer;
   font-weight: bold;
-  max-width: 100%;      
-  box-sizing: border-box; 
-  white-space: normal;   
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
   text-align: center;
 }
 .button a:hover {
@@ -168,38 +183,37 @@ h1 {
 
 /*form*/
 
-form{
+form {
   border-radius: 15px;
   background-color: var(--color-light-pink);
 }
-span{
+span {
   color: var(--color-purple);
 }
 
-fieldset{
+fieldset {
   border: 0;
 }
 
 @media (max-width: 1000px) {
-
   article {
     padding-right: 20px;
-    padding-bottom: 90px; 
-     border-right: none; 
+    padding-bottom: 90px;
+    border-right: none;
     border-bottom: 1.5px solid black;
   }
-  aside{
-    border-left: none; 
+  aside {
+    border-left: none;
   }
   .icons {
-    top: auto; 
-    right: auto; 
-    transform: none !important; 
+    top: auto;
+    right: auto;
+    transform: none !important;
     bottom: 20px;
     left: 0;
   }
   .icons ul {
-    flex-direction: row; 
+    flex-direction: row;
     gap: 20px;
   }
 }
