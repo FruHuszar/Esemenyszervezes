@@ -5,11 +5,12 @@
 }
 
 body {
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
+  margin: 20px 0 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 html {
   scrollbar-gutter: stable;
@@ -41,6 +42,21 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+#events{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 10px;
+  
+}
+
+.love{
+  border: 1px solid black;
+  width: 20vh;
+  height: 20vh;
+
 }
 
 aside {

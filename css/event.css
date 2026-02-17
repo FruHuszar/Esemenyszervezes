@@ -1,6 +1,6 @@
 /*esemenyek elrendezese csak az index.html-hez, levente*/
 
-html, body {
+/*html, body {
     display: block !important;      
     height: auto !important;        
     min-height: 100vh !important;   
@@ -18,7 +18,7 @@ article {
     height: auto !important;
     overflow: visible !important;  
     display: block !important;
-}
+}*/
 
 .button-container {
     margin: 20px 0;
