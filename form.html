@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form.css" />
   </head>
 
   <body>
@@ -26,26 +26,39 @@
           <li class="active"><a href="form.html">Jelentkezés</a></li>
         </ul>
       </nav>
-            <article>
+      <article>
         <h1>Jelentkezz!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed itaque velit cumque assumenda quo atque magni fugit aspernatur cupiditate, ut accusamus eaque modi perspiciatis earum reiciendis, autem nesciunt est.
-        Consequuntur sequi animi ratione voluptatum beatae quod laudantium possimus, error aspernatur harum praesentium perferendis omnis quibusdam cumque. Est iure odio modi iusto aut quasi nostrum voluptatibus. Reiciendis tempore esse eum?</p>
+        <p>
+          Azért éri meg jelentkezni a nightcore eseményre, mert egy olyan
+          különleges élményt kínál, ahol a zene, az energia és a közösség
+          egyszerre van jelen. A nightcore lendületes, motiváló hangzásvilága
+          feltölt, kiszakít a hétköznapokból, és igazi élményt ad. Emellett
+          lehetőséget biztosít új emberek megismerésére, közös élmények
+          szerzésére és inspiráció gyűjtésére. Egy ilyen esemény nemcsak
+          szórakozás, hanem egy emlékezetes, pozitív tapasztalat, ami hosszú
+          távon is feltölt energiával.
+        </p>
         <form action="">
           <fieldset class="registration">
             <legend></legend>
             <div class="reg">
-              <label for="name">Név <span> * </span></label>
+              <label for="name"
+                >Név <i class="fa-solid fa-circle-user"></i
+              ></label>
               <input
                 type="text"
                 name="name"
                 id="name"
                 required
-                maxlength="50"
+                maxlength="50" placeholder="Példa Péter"
               />
             </div>
             <div class="reg">
-              <label for="email_add">Email-cím <span> * </span></label>
-              <input type="email" name="email_add" id="email_add" required />
+              <label for="email_add"
+                >Email-cím <i class="fa-solid fa-envelope"></i
+              ></label>
+
+              <input type="email" name="email_add" id="email_add" required placeholder="valami@gmail.com"/>
             </div>
           </fieldset>
           <fieldset>
@@ -77,6 +90,7 @@
               />
             </div>
             <div>
+              <legend>Résztvevő típusa:</legend>
               <input type="checkbox" name="type1" id="type1" value="adult" />
               <label for="t1">Felnőtt</label>
             </div>
@@ -93,9 +107,9 @@
               <label for="t4">Diák</label>
             </div>
             <fieldset>
-              <legend>Megjegyzés</legend>
+              <legend>Megjegyzés <i class="fa-solid fa-comment"></i></legend>
               <label for="comment"></label>
-              <textarea name="comment" id="comment"></textarea>
+              <textarea name="comment" id="comment" placeholder="Nagyon várom az eseményt :3"></textarea>
             </fieldset>
             <input type="submit" name="send" id="send" value="Küldés" />
           </fieldset>

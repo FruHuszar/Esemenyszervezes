@@ -58,7 +58,10 @@ article {
   height: 20vh;
 
 }
-
+.love img{
+  width: 20vh;
+  height: 20vh;
+}
 aside {
   flex: 0 0 30%;
   min-height: 75vh;
